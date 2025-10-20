@@ -1,1 +1,1 @@
-# soc_d-v_project
+# System on chip design and verification Project
