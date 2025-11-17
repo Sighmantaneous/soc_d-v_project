@@ -21,10 +21,12 @@ In setting up this project we had two sample templates, colourCycle and colourSt
 ### **Schematic of project**
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Week1SocProject3.png">
+Not including row and col in VGATOP results in two different schematics
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Schematicweek9.png">
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
 ### **Simulation**
-Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SOCweek9.png">
 ### **Synthesis**
 Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
 ### **Demonstration**
@@ -36,7 +38,7 @@ Introduce your own design idea. Consider how complex/achievabble this might be o
 Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
 ### **Simulation**
 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Schematicweek9.png">
+
 A project of my size is difficult to simulate with the tool as the changes do not occur frequently enough to see it in simulation 
 
 ### **Synthesis**
