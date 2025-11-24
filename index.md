@@ -31,12 +31,18 @@ Here is the VGATOP file which is used **EXPLAIN THIS**
 Here is the code for my Project **EXPLAIN**
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153621.png">
 Mid
+
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153841.png">
 End
+
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153807.png">
 
 ### **Simulation**
+
+When trying to capture a simulation of my project I ran into difficulty as the time it took for my images to change was too long to capture in the simulation tool. which only captures the first 1000 nano seconds while my project takes upto **find Time** to change once.
+
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SOCweek9.png">
+
 ### **Synthesis**
 Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
 ### **Demonstration**
