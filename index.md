@@ -71,6 +71,13 @@ A project of my size is difficult to simulate with the tool as the changes do no
 ### **Synthesis**
 Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
 
+Overview
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SynthisisZoomedOutWeek10.png">
+
+Zoomed In 
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SynthisisWeek10.png">
+
+
 ### **Demonstration**
 If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
 
