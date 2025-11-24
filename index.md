@@ -8,16 +8,33 @@ categories: demo
 For this project we have to demonstrate our understanding of VGA output using the BASYS 3 Xilinx board and the vivado software suite. Demonstrating a understanding of timers as well aa how to display 12bit colours via VGA. 
 
 
-
 ### **Schematic of project**
-Here is drawing of Architectural Drawing of how VGATop should look
+
+Here is drawing of Architectural Drawing of how colour stripes should look
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Schematic.jpg">
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Week1SocProject3.png">
-Not including row and col in VGATOP results in two different schematics
+
+And here is the Schematic that Vivado generated based on my design.
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Schematicweek9.png">
+
+We can see that they are quite similar but i used colour cycle as my template and incorperated stripes into it. 
+I am using the 25mhz clock for the vgaSync but controlling the ColourCycle using the 100Mhz clock. **WHY**
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
+
+This is the VGAsync file that was provided to us. It was not altered in anyway This **Why is this file included**
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153452.png">
+
+Here is the VGATOP file which is used **EXPLAIN THIS**
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153350.png">
+
+Here is the code for my Project **EXPLAIN**
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153621.png">
+Mid
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153841.png">
+End
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153807.png">
+
 ### **Simulation**
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SOCweek9.png">
 ### **Synthesis**
