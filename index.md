@@ -73,6 +73,7 @@ Zoomed In
 
 ### **Demonstration**
 If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
+                                                                        Press play to view video
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/VidSoC.gif">
 
