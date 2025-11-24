@@ -5,14 +5,14 @@ tags: fpga vga verilog
 categories: demo
 ---
 
-For this project we have to demonstrate our understanding of VGA output using the BASYS 3 Xilinx board and the vivado software suite. Demonstrating a understanding of timers as well as basic rasterisation to display 8bit colours by altering templetes provided to us. 
+For this project we have to demonstrate our understanding of VGA output using the BASYS 3 Xilinx board and the vivado software suite. Demonstrating a understanding of timers as well aa how to display 12bit colours via VGA. 
 
 
 
 ### **Schematic of project**
+Here is drawing of Architectural Drawing of how VGATop should look
 
-
-Here was my schematic before I realised that I had forgotten to add row and column to the colour cycle unit
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Schematic.jpg">
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Week1SocProject3.png">
 Not including row and col in VGATOP results in two different schematics
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Schematicweek9.png">
@@ -45,8 +45,10 @@ A project of my size is difficult to simulate with the tool as the changes do no
 
 ### **Synthesis**
 Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
+
 ### **Demonstration**
 If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
+
 
 ## **More Markdown Basics**
 This is a paragraph. Add an empty line to start a new paragraph.
