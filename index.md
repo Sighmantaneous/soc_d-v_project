@@ -15,33 +15,13 @@ Here is drawing of Architectural Drawing of how colour stripes should look
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Schematic.jpg">
 
 And here is the Schematic that Vivado generated based on my design.
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Schematicweek9.png">
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SchematicWeek10.png">
 
 We can see that they are quite similar but i used colour cycle as my template and incorperated stripes into it. 
 I am using the 25mhz clock for the vgaSync but controlling the ColourCycle using the 100Mhz clock. **WHY**
-### **Template Code**
-Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
 
-This is the VGAsync file that was provided to us. It was not altered in anyway This **Why is this file included**
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153452.png">
 
-Here is the VGATOP file which is used **EXPLAIN THIS**
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153350.png">
 
-Here is the code for my Project **EXPLAIN**
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153621.png">
-Mid
-
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153841.png">
-End
-
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153807.png">
-
-### **Simulation**
-
-When trying to capture a simulation of my project I ran into difficulty as the time it took for my images to change was too long to capture in the simulation tool. which only captures the first 1000 nano seconds while my project takes upto **find Time** to change once.
-
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SOCweek9.png">
 
 ### **Synthesis**
 Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
@@ -59,10 +39,32 @@ In setting up this project we had two sample templates, colourCycle and colourSt
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Week1SocProject.png">
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Week1SocProject2.png">
+
 ### **Code Adaptation**
-Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
+
+This is the VGAsync file that was provided to us. It was not altered in anyway This **Why is this file included**
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153452.png">
+
+Here is the VGATOP file which is used **EXPLAIN THIS**
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153350.png">
+
+Here is the code for my Project **EXPLAIN**
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153621.png">
+Mid
+
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153841.png">
+End
+
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153807.png">
+
+
 ### **Simulation**
 
+When trying to capture a simulation of my project I ran into difficulty as the time it took for my images to change was too long to capture in the simulation tool. which only captures the first 1000 nano seconds while my project takes upto **find Time** to change once.
+
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SOCweek9.png">
+We can see that everything is being updated on the rising edge of each clock cycle 
+The hsync updates twice as often as vsync as **EXPLAIN**
 
 A project of my size is difficult to simulate with the tool as the changes do not occur frequently enough to see it in simulation 
 
