@@ -16,9 +16,15 @@ For my Project I wanted to combine both of the colour cycle and colour stripe te
 
 ### **Schematic of project**
 
-Here is drawing of Architectural Drawing of how colour stripes should look
+Here are my Schematic diagram of my project
 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Schematic.jpg">
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/PinoutDiagram.jpg">
+
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/TestBenchArch.jpg">
+
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SchematicArch.jpg">
+
+
 
 And here is the Schematic that Vivado generated based on my design.
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SchematicWeek10.png">
