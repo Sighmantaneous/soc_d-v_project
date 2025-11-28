@@ -34,7 +34,9 @@ I am using the 25mhz clock for the vgaSync but controlling the ColourCycle using
 ### **Project Set-Up**
 
 In setting up this project we had two sample templates, colourCycle and colourStripes we had to adapt the colourCycle to include the clk_wiz_0 another clock that operates at 25Mhz. For the ColourStripes I then had to update the VGATOP design to include the ColourStripes i_colour_stripes unit . From there after getting stripes displayed I altered the image to display just two colours by defining the rows and columns (x & y cords) 
-From there I decided I that to use ColourCycle as my baseline for this project 
+
+I decided to use ColourCycle as my baseline for this project and incorperate in the pieces of colour stripes which I wanted. mainly the inclusion of row and column as well as changing the output from 12bit colour to the 3 seperate 4bit RGB. allowng me to draw different colours within each cycle using colourstripes method. I encountered difficulty were as you will see below in code I kept getting stuck in the first if statement of each cycle causing each cycle to be just one colour instead of a flag. I eventually discovered that I did not include row and column in the VGA top file under the ColourCycle generator. After Including my project worked correctly. Before this the program had no idea what row and column were and so just defaulted to the first colour in the if statement.
+
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Week1SocProject.png">
 
