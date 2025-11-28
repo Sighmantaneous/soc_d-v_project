@@ -28,6 +28,7 @@ I am using the 25mhz clock for the vgaSync but controlling the ColourCycle using
 ### **Project Set-Up**
 
 In setting up this project we had two sample templates, colourCycle and colourStripes we had to adapt the colourCycle to include the clk_wiz_0 another clock that operates at 25Mhz. For the ColourStripes I then had to update the VGATOP design to include the ColourStripes i_colour_stripes unit . From there after getting stripes displayed I altered the image to display just two colours by defining the rows and columns (x & y cords) 
+From there I decided I that to use ColourCycle as my baseline for this project 
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Week1SocProject.png">
 
@@ -35,8 +36,13 @@ In setting up this project we had two sample templates, colourCycle and colourSt
 
 ### **Code Adaptation**
 
-This is the VGAsync file that was provided to us. It was not altered in anyway This **Why is this file included**
+This is the VGAsync file that was provided to us. It was not altered in anyway.
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153452.png">
+This file generates the horizontal and vertical sync as well as the pixel parameters required to display at 640 x 480 via VGA by using counters to compare to timing paramters
+It is an implementation of the following 
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/RasterProcess.png">
+
+
 
 Here is the VGATOP file which is used **EXPLAIN THIS**
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153350.png">
@@ -57,7 +63,7 @@ When trying to capture a simulation of my project I ran into difficulty as the t
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SOCweek9.png">
 We can see that everything is being updated on the rising edge of each clock cycle 
-The hsync updates twice as often as vsync as **EXPLAIN**
+The hsync updates more often than vsync which would make sense as the way the frame is rastered it goes across the row first then wraps around and drops down a column as explain in code adaptation section when discussing vgaSync
 
 A project of my size is difficult to simulate with the tool as the changes do not occur frequently enough to see it in simulation 
 
