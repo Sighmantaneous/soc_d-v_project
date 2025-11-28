@@ -38,9 +38,17 @@ From there I decided I that to use ColourCycle as my baseline for this project
 
 This is the VGAsync file that was provided to us. It was not altered in anyway.
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153452.png">
-This file generates the horizontal and vertical sync as well as the pixel parameters required to display at 640 x 480 via VGA by using counters to compare to timing paramters
-It is an implementation of the following 
+
+This file generates the horizontal and vertical sync as well as the pixel parameters required to display at 640 x 480 via VGA by using counters to compare to timing parameters
+
+It is an implementation of the following diagram.
+
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/RasterProcess.png">
+
+
+
+
+
 
 
 
