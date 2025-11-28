@@ -65,29 +65,46 @@ Here is the VGATOP file which is used It is a top level module that combines the
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153350.png">
 
+as mentioned above I just included row and column here 
 
-Here is the code for my Project **EXPLAIN**
+Here is the code for my Project .
+
+What is happening here is that every change of state which occurs I am drawing a flag using rows or columns to fill in the pixels with said colours. Mine include both horizontal and vertical flags in its display. Each state change is determined by the COUNT_TO variable which I could alter to increase or decrease the amount of time a flag was displayed for 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153621.png">
 Mid
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153841.png">
 End
-
+I had to alter the output wire from one called colour to the seperate green blue and red wires shown 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153807.png">
+
+I found that I had to set a base colour in each of the states before drawing a flag in order for it to run correctly. Seems to be a quirk with Vivado or verilog as sometimes I didn't have to include and it would work but I decided to leave it in just incase 
 
 
 ### **Simulation**
 
-When trying to capture a simulation of my project I ran into difficulty as the time it took for my images to change was too long to capture in the simulation tool. which only captures the first 1000 nano seconds while my project takes upto **find Time** to change once.
+When trying to capture a simulation of my project I ran into difficulty as the time it took for my images to change was too long to capture in the simulation tool. which only captures the first 1000 nano seconds while my project takes longer to display
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SOCweek9.png">
 We can see that everything is being updated on the rising edge of each clock cycle 
 The hsync updates more often than vsync which would make sense as the way the frame is rastered it goes across the row first then wraps around and drops down a column as explain in code adaptation section when discussing vgaSync
 
-A project of my size is difficult to simulate with the tool as the changes do not occur frequently enough to see it in simulation 
+In this scaled down version everything does seem to work and I am sure if I increase the simulation time(which I would not do  due to time) we would see changes on the row and col as well as changes to each of the 4bit colours.
+I am happy with the simulation as it allows me to see that the clock and syncs are working correctly. I can correlate this with my output to determine that my project is functioning correctly.
+
+A project of my size is difficult to simulate with the tool as the changes do not occur frequently enough to see it in simulation
 
 ### **Synthesis**
-Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
+
+Synthesis is the process of turning my verilog code into a real hardware implementation using gates, flipflops and LUTS. Allowing a optimisation by combining logic and efficiently mapping.
+
+We can see in my picture below the hardware that synthesis decided to use on the board for my project.
+The orange blocks are .....
+
+We can see that it is using alot more additional hardware than the templates with a notable cluster in the right middle of photo. 
+Zoomed in on that cluster we can see that it is the hardware logic for a statemachine that uses registers and LUTs.
+this cluster I assume is where the if/else conditionals for my flag display are occuring as its alot of combinational logic required with some repetition of results would make sense for it be located together as mentioned above synthesis combines logic if possible.
+
 
 Overview
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SynthisisZoomedOutWeek10.png">
