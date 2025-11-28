@@ -50,21 +50,17 @@ This is the VGAsync file that was provided to us. It was not altered in anyway.
 This file generates the horizontal and vertical sync as well as the pixel parameters required to display at 640 x 480 via VGA by using counters to compare to timing parameters
 vid_on is only on when display is with the visible pixels ( Horizontal 640 and vertical 480) the remaining pixels make up the front(VFP) and back porch( VLIM - (VDISP + VFP + VPW)
 
+
 It is an implementation of the following diagram.
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/RasterProcess.png">
 
 
-
-
-
-
-
-
-Here is the VGATOP file which is used It is a top level module that combines the clock generator the VgaSync generator, the colourCycle generator and the output pins 
+Here is the VGATOP file which is used It is a top level module that combines the clock generator the VgaSync generator, the colourCycle generator and the output pins. The only altering I done is just included row and column here as part of colourcycle uut 
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153350.png">
- I just included row and column here 
+
+
 
 Here is the  main code for my Project .
 
