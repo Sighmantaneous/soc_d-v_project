@@ -59,13 +59,10 @@ It is an implementation of the following diagram.
 
 
 
-Here is the VGATOP file which is used
+Here is the VGATOP file which is used It is a top level module that combines the clock generator the VgaSync generator, the colourCycle generator and the output pins 
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153350.png">
 
-It includes all inputs(clock and reset) and VGA outputs for project as well as generating the 25Mhz 
-
-Here all I altered was including row and column
 
 Here is the code for my Project **EXPLAIN**
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153621.png">
@@ -98,8 +95,8 @@ Zoomed In
 
 
 ### **Demonstration**
-If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
-                                                                        Press play to view video
+
+Press play to view gif of my projects output.
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/VidSoC.gif">
 
