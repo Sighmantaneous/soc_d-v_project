@@ -40,6 +40,7 @@ This is the VGAsync file that was provided to us. It was not altered in anyway.
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153452.png">
 
 This file generates the horizontal and vertical sync as well as the pixel parameters required to display at 640 x 480 via VGA by using counters to compare to timing parameters
+vid_on is only on when display is with the visible pixels ( Horizontal 640 and vertical 480) the remaining pixels make up the front(VFP) and back porch( VLIM - (VDISP + VFP + VPW)
 
 It is an implementation of the following diagram.
 
@@ -52,8 +53,13 @@ It is an implementation of the following diagram.
 
 
 
-Here is the VGATOP file which is used **EXPLAIN THIS**
+Here is the VGATOP file which is used
+
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153350.png">
+
+It includes all inputs(clock and reset) and VGA outputs for project as well as generating the 25Mhz 
+
+Here all I altered was including row and column
 
 Here is the code for my Project **EXPLAIN**
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153621.png">
