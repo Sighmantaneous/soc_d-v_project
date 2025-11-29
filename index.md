@@ -67,7 +67,7 @@ Here is the  main code for my Project .
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153841.png">
 
-I had to alter the output wire from one called colour to the seperate green blue and red wires shown 
+I had to alter the output wire from one called colour to the separate red, green and blue wires shown 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153807.png">
 
 What is happening here is that every change of state which occurs I am drawing a flag using rows or columns to fill in the pixels with said colours. Mine include both horizontal and vertical flags in its display. Each state change is determined by the COUNT_TO variable which I could alter to increase or decrease the amount of time a flag was displayed for 
