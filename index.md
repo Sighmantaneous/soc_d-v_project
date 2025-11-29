@@ -95,11 +95,12 @@ The orange blocks around the edges represent the I/O pins used by the VGA pinout
 
 We can see that it is using alot more additional hardware than the templates with a notable cluster in the right middle of photo. 
 Zoomed in on that cluster we can see that it is the hardware logic for a statemachine that uses registers, adders and LUTs.
-this cluster I assume is where the if/else conditionals for my flag display are occuring as its alot of combinational logic required with some repetition of results would make sense for it be located together as mentioned above synthesis combines logic if possible.
+This cluster I assume is where the if/else conditionals for my flag display are occuring as its alot of combinational logic required with some repetition of results would make sense for it be located together as mentioned above synthesis combines logic if possible.
 
 
 
 Overview
+
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SynthisisZoomedOutWeek10.png">
 
 Zoomed In 
@@ -116,23 +117,3 @@ Video of the output of my project working.
 ### **References**
 
 [1] Basys 3™ FPGA Board Reference Manual, 3rd ed. Digilent, Pullman, WA, USA, July 10, 2019. [Online]. Available: https://digilent.com/reference/programmable-logic/basys-3/reference-manual  (accessed Nov. 29, 2025).
-
-
-## **More Markdown Basics**
-This is a paragraph. Add an empty line to start a new paragraph
-Font can be emphasised as *Italic* or **Bold**.
-
-Code can be highlighted by using `backticks`.
-
-Hyperlinks look like this: [GitHub Help](https://help.github.com/).
-
-A bullet list can be rendered as follows:
-- vectors
-- algorithms
-- iterators
-
-Images can be added by uploading them to the repository in a /docs/assets/images folder, and then rendering using HTML via githubusercontent.com as shown in the example below.
-
-<img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/">
-
-
