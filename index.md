@@ -29,13 +29,11 @@ Here are my Schematic diagram of my project
 And here is the Schematic that Vivado generated based on my design.
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SchematicWeek10.png">
 
-We can see that they are quite similar but i used colour cycle as my template and incorperated stripes into it. 
-I am using the 25mhz clock for the vgaSync but controlling the ColourCycle using the 100Mhz clock. **WHY**
 ### **Project Set-Up**
 
 In setting up this project we had two sample templates, colourCycle and colourStripes we had to adapt the colourCycle to include the clk_wiz_0 another clock that operates at 25Mhz. For the ColourStripes I then had to update the VGATOP design to include the ColourStripes i_colour_stripes unit . From there after getting stripes displayed I altered the image to display just two colours by defining the rows and columns (x & y cords) 
 
-I decided to use ColourCycle as my baseline for this project and incorperate in the pieces of colour stripes which I wanted. mainly the inclusion of row and column as well as changing the output from 12bit colour to the 3 seperate 4bit RGB. allowng me to draw different colours within each cycle using colourstripes method. I encountered difficulty were as you will see below in code I kept getting stuck in the first if statement of each cycle causing each cycle to be just one colour instead of a flag. I eventually discovered that I did not include row and column in the VGA top file under the ColourCycle generator. After Including my project worked correctly. Before this the program had no idea what row and column were and so just defaulted to the first colour in the if statement.
+I decided to use ColourCycle as my baseline for this project and incorperate in the pieces of colour stripes which I wanted. mainly the inclusion of row and column as well as changing the output from 12bit colour to the 3 separate 4bit RGB values. This allowed me to draw different colours within each cycle using colourstripes method. I encountered difficulty where I kept getting stuck in the first if statement of each cycle causing it to display the first colour instead of the complete flag. I eventually discovered that I did not include row and column in the VGA top file under the ColourCycle generator. After Including my project worked correctly. Before this the program had no idea what row and column were and so just defaulted to the first colour in the if statement.
 
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Week1SocProject.png">
@@ -47,11 +45,11 @@ I decided to use ColourCycle as my baseline for this project and incorperate in 
 This is the VGAsync file that was provided to us. It was not altered in anyway.
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153452.png">
 
-This file generates the horizontal and vertical sync as well as the pixel parameters required to display at 640 x 480 via VGA by using counters to compare to timing parameters
+This file generates the horizontal and vertical sync as well as the pixel parameters required to display at 640 x 480 via VGA by using counters to compare to timing parameters.
 vid_on is only on when display is with the visible pixels ( Horizontal 640 and vertical 480) the remaining pixels make up the front(VFP) and back porch( VLIM - (VDISP + VFP + VPW)
 
 
-It is an implementation of the following diagram.
+It is an implementation of the following diagram found in the Basys Reference Manual [1] 
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/RasterProcess.png">
 
@@ -71,19 +69,20 @@ Here is the  main code for my Project .
 
 I had to alter the output wire from one called colour to the seperate green blue and red wires shown 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153807.png">
+
 What is happening here is that every change of state which occurs I am drawing a flag using rows or columns to fill in the pixels with said colours. Mine include both horizontal and vertical flags in its display. Each state change is determined by the COUNT_TO variable which I could alter to increase or decrease the amount of time a flag was displayed for 
 I found that I had to set a base colour in each of the states before drawing a flag in order for it to run correctly. Seems to be a quirk with Vivado or verilog as sometimes I didn't have to include and it would work but I decided to leave it in just incase 
 
 
 ### **Simulation**
 
-When trying to capture a simulation of my project I ran into difficulty as the time it took for my images to change was too long to capture in the simulation tool. which only captures the first 1000 nano seconds while my project takes longer to display
+When trying to capture a simulation of my project I ran into difficulty as the time it took for my images to change was too long to capture in the simulation tool. which is intended as simulation is a scaled down version of the actual operation of the hardware.
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SOCweek9.png">
 We can see that everything is being updated on the rising edge of each clock cycle 
 The hsync updates more often than vsync which would make sense as the way the frame is rastered it goes across the row first then wraps around and drops down a column as explain in code adaptation section when discussing vgaSync
 
-In this scaled down version everything does seem to work and I am sure if I increase the simulation time(which I would not do  due to time) we would see changes on the row and col as well as changes to each of the 4bit colours.
+In this scaled down version everything does seem to work and I am sure if I increase the simulation duration we would see changes on the row and col as well as changes to each of the 4bit colours.
 I am happy with the simulation as it allows me to see that the clock and syncs are working correctly. I can correlate this with my output to determine that my project is functioning correctly.
 
 A project of my size is difficult to simulate with the tool as the changes do not occur frequently enough to see it in simulation
@@ -113,9 +112,14 @@ Press play to view gif of my projects output.
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/VidSoC.gif">
 
-## **More Markdown Basics**
-This is a paragraph. Add an empty line to start a new paragraph.
 
+### **References**
+
+[1] Basys 3™ FPGA Board Reference Manual, 3rd ed. Digilent, Pullman, WA, USA, July 10, 2019. [Online]. Available: https://digilent.com/reference/programmable-logic/basys-3/reference-manual  (accessed Nov. 29, 2025).
+
+
+## **More Markdown Basics**
+This is a paragraph. Add an empty line to start a new paragraph
 Font can be emphasised as *Italic* or **Bold**.
 
 Code can be highlighted by using `backticks`.
