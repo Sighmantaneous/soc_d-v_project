@@ -97,6 +97,7 @@ The orange blocks are .....
 We can see that it is using alot more additional hardware than the templates with a notable cluster in the right middle of photo. 
 Zoomed in on that cluster we can see that it is the hardware logic for a statemachine that uses registers and LUTs.
 this cluster I assume is where the if/else conditionals for my flag display are occuring as its alot of combinational logic required with some repetition of results would make sense for it be located together as mentioned above synthesis combines logic if possible.
+The orange blocks around the edges represent the I/O pins used by the VGA pinout (15 pins) 
 
 
 Overview
