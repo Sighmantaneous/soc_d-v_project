@@ -5,13 +5,13 @@ tags: fpga vga verilog
 categories: demo
 ---
 
-For this project we have to demonstrate our understanding of VGA output using the BASYS 3 Xilinx board and the vivado software suite. Demonstrating a understanding of timers as well aa how to display 12bit colours via VGA. 
+For this project we have to demonstrate our understanding of VGA output using the BASYS 3 Xilinx board and the vivado software suite. Demonstrating a understanding of timers as well as how to display 12bit colours via VGA. 
 
 
 
 
 ## **My VGA Design Edit**
-Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).
+
 For my Project I wanted to combine both of the colour cycle and colour stripe template in order to create a program that cycles through a selection of National flags that I created. 
 
 ### **Schematic of project**
