@@ -89,15 +89,15 @@ A project of my size is difficult to simulate with the tool as the changes do no
 
 ### **Synthesis**
 
-Synthesis is the process of turning my verilog code into a real hardware implementation using gates, flipflops and LUTS. Allowing a optimisation by combining logic and efficiently mapping.
+Synthesis is the process of turning my verilog code into a real hardware implementation using flipflops, gates, adders and LUTs. Allowing a optimisation by combining logic and efficiently mapping.
 
 We can see in my picture below the hardware that synthesis decided to use on the board for my project.
-The orange blocks are .....
+The orange blocks around the edges represent the I/O pins used by the VGA pinout (15 pins) 
 
 We can see that it is using alot more additional hardware than the templates with a notable cluster in the right middle of photo. 
-Zoomed in on that cluster we can see that it is the hardware logic for a statemachine that uses registers and LUTs.
+Zoomed in on that cluster we can see that it is the hardware logic for a statemachine that uses registers, adders and LUTs.
 this cluster I assume is where the if/else conditionals for my flag display are occuring as its alot of combinational logic required with some repetition of results would make sense for it be located together as mentioned above synthesis combines logic if possible.
-The orange blocks around the edges represent the I/O pins used by the VGA pinout (15 pins) 
+
 
 
 Overview
