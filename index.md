@@ -5,10 +5,9 @@ tags: fpga vga verilog
 categories: demo
 ---
 
-For this project we have to demonstrate our understanding of VGA output using the BASYS 3 Xilinx board and the vivado software suite. Demonstrating a understanding of timers as well as how to display 12bit colours via VGA. 
-
-
-
+In this SoC project, I have adapted an FPGA VGA driver to display graphics on a
+640x480 display using the BASYS 3 Xilinx board and the vivado software suite.
+This is a blog of my experience throughout the project.
 
 ## **My VGA Design Edit**
 
