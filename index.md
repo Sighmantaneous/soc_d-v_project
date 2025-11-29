@@ -54,7 +54,7 @@ It is an implementation of the following diagram found in the Basys Reference Ma
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/RasterProcess.png">
 
 
-Here is the VGATOP file which is used It is a top level module that combines the clock generator the VgaSync generator, the colourCycle generator and the output pins. The only altering I done is just included row and column here as part of colourcycle uut 
+Here is the VGATOP file which is used It is a top level module that combines the clock generator the VgaSync generator, the colourCycle generator and the output pins. The only altering I done is just included row and column here as part of colourcycle.
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153350.png">
 
