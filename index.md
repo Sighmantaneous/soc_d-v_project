@@ -69,8 +69,8 @@ Here is the  main code for my Project .
 I had to alter the output wire from one called colour to the separate red, green and blue wires shown 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153807.png">
 
-What is happening here is that every change of state which occurs I am drawing a flag using rows or columns to fill in the pixels with said colours. Mine include both horizontal and vertical flags in its display. Each state change is determined by the COUNT_TO variable which I could alter to increase or decrease the amount of time a flag was displayed for 
-I found that I had to set a base colour in each of the states before drawing a flag in order for it to run correctly. Seems to be a quirk with Vivado or verilog as sometimes I didn't have to include and it would work but I decided to leave it in just incase 
+What is happening here is that every change of state which occurs I am drawing a flag using rows or columns to fill in the pixels with said colours. Mine include both horizontal and vertical flags in its display. Each state change is determined by the COUNT_TO variable which I could alter to increase or decrease the amount of time a flag was displayed for. 
+I found that I had to set a base colour in each of the states before drawing a flag in order for it to run correctly. Seems to be a quirk with Vivado or verilog as sometimes I didn't have to include and it would work but I decided to leave it in as it is invisible to the human eye 
 
 
 ### **Simulation**
