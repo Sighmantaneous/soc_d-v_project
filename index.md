@@ -109,7 +109,7 @@ Zoomed In
 
 ### **Demonstration**
 
-Press play to view gif of my projects output.
+Video of the output of my project working.
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/VidSoC.gif">
 
