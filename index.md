@@ -22,16 +22,16 @@ Here are my Schematic diagrams of my project
 
 
 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/pinoutV2.jpg">
+<img src="../assets/images/pinoutV2.jpg">
 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/TestBenchArch.jpg">
+<img src="../assets/images/TestBenchArch.jpg">
 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SchematicArch.jpg">
+<img src="../assets/images/SchematicArch.jpg">
 
 
 
 And here is the Schematic that Vivado generated based on my design.
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SchematicWeek10.png">
+<img src="../assets/images/SchematicWeek10.png">
 
 ### **Project Set-Up**
 
