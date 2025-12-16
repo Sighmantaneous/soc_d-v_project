@@ -17,9 +17,8 @@ For my Project I wanted to combine both of the colour cycle and colour stripe te
 
 Here are my Schematic diagrams of my project
 
-<img src=""https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/images/pinoutV2.jpg">
+<img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/docs/assets/images/20251124_151241.jpg">
 <img src="../assets/images/SchematicWeek10.png" alt="Schematic Week 10">
-
 
 
 
