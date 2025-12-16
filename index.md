@@ -23,11 +23,11 @@ Here are my Schematic diagrams of my project
 
 
 
-<img src="../assets/images/pinoutV2.jpg">
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/pinoutV2.jpg">
 
-<img src="../assets/images/TestBenchArch.jpg">
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/TestBenchArch.jpg">
 
-<img src="../assets/images/SchematicArch.jpg">
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SchematicArch.jpg">
 
 
 
