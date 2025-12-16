@@ -17,11 +17,11 @@ For my Project I wanted to combine both of the colour cycle and colour stripe te
 
 Here are my Schematic diagrams of my project
 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/pinoutV2.jpg">
+<img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/pinoutV2.jpg">
 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/TestBenchArch.jpg">
+<img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/TestBenchArch.jpg">
 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SchematicArch.jpg">
+<img src="https://raw.githubusercontent.com/soc_d-v_project/blob/main/docs/assets/images/SchematicArch.jpg">
 
 
 
