@@ -17,9 +17,9 @@ For my Project I wanted to combine both of the colour cycle and colour stripe te
 
 Here are my Schematic diagrams of my project
 
-<img src="../assets/images/SchematicWeek10.png">
 
 <img src="../assets/images/SchematicWeek10.png" alt="Schematic Week 10">
+
 
 
 
