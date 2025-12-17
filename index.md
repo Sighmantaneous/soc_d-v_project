@@ -86,7 +86,7 @@ When trying to capture a simulation of my project I ran into difficulty as the t
 
 <img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/images/SOCweek9.png">
 We can see that everything is being updated on the rising edge of each clock cycle 
-The hsync updates more often than vsync which would make sense as the way the frame is rastered it goes across the row first then wraps around and drops down a column as explain in code adaptation section when discussing vgaSync
+The hsync updates more often than vsync which would make sense as the way the frame is rastered it goes across the row first then wraps around and drops down a column as explained in code adaptation section when discussing vgaSync
 
 In this scaled down version everything does seem to work and I am sure if I increase the simulation duration we would see changes on the row and col as well as changes to each of the 4bit colours.
 I am happy with the simulation as it allows me to see that the clock and syncs are working correctly. I can correlate this with my output to determine that my project is functioning correctly.
@@ -100,7 +100,7 @@ Synthesis is the process of turning my verilog code into a real hardware impleme
 We can see in my picture below the hardware that synthesis decided to use on the board for my project.
 The orange blocks around the edges represent the I/O pins used by the VGA pinout (15 pins) 
 
-We can see that it is using alot more additional hardware than the templates with a notable cluster in the right middle of photo. 
+We can see that it is using alot more additional hardware than the templates with a notable cluster in the left middle of photo. 
 Zoomed in on that cluster we can see that it is the hardware logic for a statemachine that uses registers, adders and LUTs.
 This cluster I assume is where the if/else conditionals for my flag display are occuring as its alot of combinational logic required with some repetition of results would make sense for it be located together as mentioned above synthesis combines logic if possible.
 
