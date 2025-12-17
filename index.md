@@ -22,11 +22,11 @@ Here are my Schematic diagrams of my project
 
 Test
 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/pinoutV2.jpg">
+<img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/images/pinoutV2.jpg">
 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/TestBenchArch.jpg">
+<img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/images/TestBenchArch.jpg">
 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SchematicArch.jpg">
+<img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/images/SchematicArch.jpg">
 
 
 
