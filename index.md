@@ -17,11 +17,6 @@ For my Project I wanted to combine both of the colour cycle and colour stripe te
 
 Here are my Schematic diagrams of my project
 
-
-<img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/images/PinoutDiagram.jpg">
-
-Test
-
 <img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/images/pinoutV2.jpg">
 
 <img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/images/TestBenchArch.jpg">
@@ -31,7 +26,8 @@ Test
 
 
 And here is the Schematic that Vivado generated based on my design.
-<img src="../assets/images/SchematicWeek10.png">
+
+<img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/images/SchematicWeek10.png">
 
 ### **Project Set-Up**
 
@@ -39,15 +35,16 @@ In setting up this project we had two sample templates, colourCycle and colourSt
 
 I decided to use ColourCycle as my baseline for this project and incorperate in the pieces of colour stripes which I wanted. mainly the inclusion of row and column as well as changing the output from 12bit colour to the 3 separate 4bit RGB values. This allowed me to draw different colours within each cycle using colourstripes method. I encountered difficulty where I kept getting stuck in the first if statement of each cycle causing it to display the first colour instead of the complete flag. I eventually discovered that I did not include row and column in the VGA top file under the ColourCycle generator. After Including my project worked correctly. Before this the program had no idea what row and column were and so just defaulted to the first colour in the if statement.
 
+<img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/images/Week1SocProject.png">
 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Week1SocProject.png">
 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Week1SocProject2.png">
+<img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/images/Week1SocProject2.png">
 
 ### **Code Adaptation**
 
 This is the VGAsync file that was provided to us. It was not altered in anyway.
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153452.png">
+
+<img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/images/Screenshot 2025-11-24 153452.png">
 
 This file generates the horizontal and vertical sync as well as the pixel parameters required to display at 640 x 480 via VGA by using counters to compare to timing parameters.
 vid_on is only on when display is with the visible pixels ( Horizontal 640 and vertical 480) the remaining pixels make up the front(VFP) and back porch( VLIM - (VDISP + VFP + VPW)
@@ -55,24 +52,28 @@ vid_on is only on when display is with the visible pixels ( Horizontal 640 and v
 
 It is an implementation of the following diagram found in the Basys Reference Manual [1] 
 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/RasterProcess.png">
+
+<img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/images/RasterProcess.png">
 
 
 Here is the VGATOP file which is used It is a top level module that combines the clock generator the VgaSync generator, the colourCycle generator and the output pins. The only altering I done is just included row and column here as part of colourcycle.
 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153350.png">
+
+<img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/images/Screenshot 2025-11-24 153350.png">
 
 
 
 Here is the  main code for my Project .
 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153621.png">
+
+<img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/images/Screenshot 2025-11-24 153621.png">
 
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153841.png">
 
 I had to alter the output wire from one called colour to the separate red, green and blue wires shown 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153807.png">
+
+<img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/images/Screenshot 2025-11-24 153807.png">
 
 What is happening here is that every change of state which occurs I am drawing a flag using rows or columns to fill in the pixels with said colours. Mine include both horizontal and vertical flags in its display. Each state change is determined by the COUNT_TO variable which I could alter to increase or decrease the amount of time a flag was displayed for. 
 I found that I had to set a base colour in each of the states before drawing a flag in order for it to run correctly. Seems to be a quirk with Vivado or verilog as sometimes I didn't have to include and it would work but I decided to leave it in as it is invisible to the human eye 
@@ -82,7 +83,8 @@ I found that I had to set a base colour in each of the states before drawing a f
 
 When trying to capture a simulation of my project I ran into difficulty as the time it took for my images to change was too long to capture in the simulation tool. which is intended as simulation is a scaled down version of the actual operation of the hardware.
 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SOCweek9.png">
+
+<img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/images/SOCweek9.png">
 We can see that everything is being updated on the rising edge of each clock cycle 
 The hsync updates more often than vsync which would make sense as the way the frame is rastered it goes across the row first then wraps around and drops down a column as explain in code adaptation section when discussing vgaSync
 
@@ -106,17 +108,19 @@ This cluster I assume is where the if/else conditionals for my flag display are 
 
 Overview
 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SynthisisZoomedOutWeek10.png">
+
+<img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/images/SynthisisZoomedOutWeek10.png">
 
 Zoomed In 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/SynthisisWeek10.png">
+
+<img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/images/SynthisisWeek10.png">
 
 
 ### **Demonstration**
 
 Video of the output of my project working.
 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/VidSoC.gif">
+<img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/VidSoC.gif">
 
 
 ### **References**
