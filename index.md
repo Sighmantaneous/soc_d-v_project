@@ -17,10 +17,11 @@ For my Project I wanted to combine both of the colour cycle and colour stripe te
 
 Here are my Schematic diagrams of my project
 
-<img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/docs/assets/images/20251124_151241.jpg">
-<img src="../assets/images/SchematicWeek10.png" alt="Schematic Week 10">
 
 
+
+<img src="https://github.com/Sighmantaneous/soc_d-v_project/docs/assets/images/PinoutDiagram.jpg">
+Test
 
 <img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/pinoutV2.jpg">
 
