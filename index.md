@@ -69,7 +69,7 @@ Here is the  main code for my Project .
 <img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/images/Screenshot 2025-11-24 153621.png">
 
 
-<img src="https://github.com/Sighmantaneous/soc_d-v_project/blob/main/docs/assets/images/Screenshot 2025-11-24 153841.png">
+<img src="https://raw.githubusercontent.com/Sighmantaneous/soc_d-v_project/main/docs/assets/images/Screenshot 2025-11-24 153841.png">
 
 I had to alter the output wire from one called colour to the separate red, green and blue wires shown 
 
